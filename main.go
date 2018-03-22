@@ -57,8 +57,8 @@ func child() {
 	must(syscall.Sethostname([]byte("container")))
 	must(cmd.Run())
 
-	must(syscall.Unmount("proc", 0))
-	must(syscall.Unmount("thing", 0))
+	//must(syscall.Unmount("proc", 0))
+	//must(syscall.Unmount("thing", 0))
 }
 
 func cg() {
