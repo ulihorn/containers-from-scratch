@@ -4,3 +4,7 @@ Writing a container in a few lines of Go code, as seen at [DockerCon 2017](https
 You need root permissions for this to work. 
 
 Also note that the Go code uses some syscall definitions that are only available when building with GOOS=linux.
+
+https://www.digitalocean.com/community/tutorials/how-to-build-go-executables-for-multiple-platforms-on-ubuntu-16-04
+
+env GOOS=linux GOARCH=amd64 go build main.go
